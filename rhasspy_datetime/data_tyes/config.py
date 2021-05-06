@@ -5,7 +5,7 @@ from pathlib import Path
 
 import pytz
 
-from rhasspy_datetime.data_tyoes.error import ConfigError
+from rhasspy_datetime.data_tyes.error import ConfigError
 
 log = logging.getLogger(__name__)
 config_path = os.path.join(str(Path(__file__).parent.parent.parent), 'config.ini')
