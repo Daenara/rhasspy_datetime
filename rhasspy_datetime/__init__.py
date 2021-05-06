@@ -7,7 +7,7 @@ import rhasspy_datetime.data_tyoes.config as cf
 log = logging.getLogger(__name__)
 
 
-def get_day(config_path: str = None) -> str:
+def get_weekday(config_path: str = None) -> str:
     if config_path is not None and cf.config_path is not config_path:
         cf.set_config_path(config_path)
 
