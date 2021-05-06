@@ -1,0 +1,5 @@
+[General]
+timezone=Europe/Berlin
+locale=german
+exact_time=False
+use_24_hour_system=False
