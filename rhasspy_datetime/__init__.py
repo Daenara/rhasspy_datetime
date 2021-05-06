@@ -2,7 +2,7 @@ import datetime
 import logging
 import random
 
-import rhasspy_datetime.data_tyes.config as cf
+import rhasspy_datetime.data_types.config as cf
 
 log = logging.getLogger(__name__)
 
