@@ -7,7 +7,7 @@ setuptools.setup(
     url='https://github.com/Daenara/rhasspy_datetime',
     packages=setuptools.find_packages(),
     py_modules=["rhasspy_datetime", "data_types", "languages"],
-    python_requires='>=3.7',
+    python_requires='>=3.7, <3.9',
     install_requires=["pytz"],
     package_data={
         '': ['config.default'],
