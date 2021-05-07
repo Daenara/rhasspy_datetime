@@ -14,8 +14,14 @@ answers = {
 
 def format_time(hours, minutes, exact_time=False, use_24_hours=False):
     time_format = "{hours} Uhr {minutes}"
+    hours_plus_1 = hours + 1
     if not use_24_hours:
         hours = hours % 12
+        hours_plus_1 = hours_plus_1 % 12
+        if hours == 0:
+            hours = 12
+        if hours_plus_1 == 0:
+            hours_plus_1 = 12
         rounded_minutes = minutes
         if not exact_time:
             if 0 < minutes <= 5:
@@ -42,4 +48,4 @@ def format_time(hours, minutes, exact_time=False, use_24_hours=False):
         elif rounded_minutes == 45:
             minutes = rounded_minutes
             time_format = "viertel vor {hours_plus_1}"
-    return time_format.format(hours=hours, minutes=minutes, hours_plus_1=hours+1)
+    return time_format.format(hours=hours, minutes=minutes, hours_plus_1=hours_plus_1)
